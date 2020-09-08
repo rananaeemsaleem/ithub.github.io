@@ -1,0 +1,393 @@
+*{
+    margin:0; padding: 0; box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h2{
+    font-size: 0.9rem;
+    margin:  20px 0 15px 0;
+    font-weight: 400;
+    color: #606060;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+   
+}
+.navbar-toggler{
+    color:white;
+}
+.header{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)),url(image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0);
+    position:relative;
+    font-family: 'Poppins', sans-serif;
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right: 0;
+    opacity:.3;
+    z-index: -1;
+    background:linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right: 0;
+    opacity:.2;
+    z-index: -10;
+    background:linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+    
+}
+.nav-item a{
+    color:#fff!important ;
+    font-weight:bold; 
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color:white;
+    text-align:center;
+    position:relative;
+    z-index: -1;
+    font-family: 'Poppins', sans-serif;
+}
+.center-div{
+    width:100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    
+}
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding:12px 35px;
+    color:#fff;
+    font-size: 400;   
+}
+.header-buttons a:hover{
+    color:#50d1c0;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+}
+.center-div p{
+    padding:10px 0 20px;
+    font-weight: 500;
+}
+
+/**************extra header div start************/
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+       
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform:  translateX(-20px);
+}
+
+
+/**************extra header div end************/
+
+/************** services div start ************/
+
+.services{
+    background:#f2f2f2;
+    padding: 50px 0px;
+    margin-bottom:30px;   
+}
+.service-pro p{
+    text-transform: capitalize;
+    font-weight: 600;
+    
+}
+i{
+    color:#008080;
+}
+.progress{
+    margin-bottom: 20px;
+    
+}
+.service-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-about h2{
+    font-size: 20px!important;
+    color:black!important;
+    font-weight: 500;
+}
+
+
+/************** services div end ************/
+
+
+/************** clients start ************/
+
+.client{
+  margin:30px;
+    padding: 20px 90px;
+    
+}
+
+/************** clients end ************/
+
+/************** packages start ************/
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+.pricing:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right: 0;
+    z-index: -1;
+    background:linear-gradient(160deg,#16c9f6 55%,#fff 0%);
+}
+
+.price{
+    font-size: 40px;
+    
+}
+.card-header{
+    background: white !important;
+    color:  black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    
+    
+}
+
+.card-body{
+    padding: 30px 0px!important;
+  
+}
+.card-body li{
+    margin:10px 0;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer{
+     border: 1px solid #008080;
+    border-radius: 100px!important;
+    margin: 0 80px!important;
+    padding:12px 45px !important;
+    font-size: 400; 
+    color: #008080;
+    text-transform: uppercase;
+    
+}
+.card-footer a{
+    text-decoration: none;
+}
+.card:hover .card-footer a{  
+         color:#fff; 
+         background:#008080; 
+         text-decoration: none;
+         box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+}
+
+.card:hover{
+    transform: translateY(-20px);
+     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    
+}
+.card{
+    transition: 0.4s ease;
+    margin-top: 60px;
+}
+
+.card:hover .card-header, .card:hover .price{
+    color:#008080;
+}
+/************** packages end ************/
+
+/************** happy client start ************/
+.happyclient{
+    width: 100%;
+    height: 100vh;
+    padding: 45px 0px;
+    
+}
+.box{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+
+}
+.img1{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+     border: 1px solid rgba(0,0,0,0.2);
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+}
+.box img{
+    border-radius: 50%;
+}
+.carousel-item{
+    text-align: center;
+    
+}
+.carousel-indicators{
+    right: 0px;
+    bottom: -40px!important;
+   
+}
+.carousel-indicators li{
+    background-color: #008080!important;
+}
+.box h1,h2{
+    text-transform: capitalize;
+    
+}
+.box:hover{
+    background:  #008080;
+    color:white;
+}
+/************** happy client end ************/
+
+
+/************** contact us start ************/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+    margin-bottom: 50px;
+    color: black;
+    
+}
+.contactus:before{
+    content: "";
+    position: absolute;
+    top:0%;
+    bottom:0%;
+    left:0;
+    right: 0;
+    z-index: -1;
+    background:linear-gradient(330deg,#16c9f6 55%,#fff 0%);
+}
+
+
+/************** contact us end************/
+
+
+
+/**************newsletter start************/
+
+.newletter{
+    width:100%;
+    height: auto;
+    margin: 80px auto;
+}
+.newletter h1{
+    margin: 50px;
+    text-transform: uppercase;   
+}
+.form-control{
+    border-radius:33px;
+    
+}
+.input-group-text{
+    border-radius:33px;
+}
+.input-group-text:hover{
+    background:  #008080;
+    color: #fff;
+    
+}
+/************** newsletter end************/
+
+/************** footer start************/
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding:50px 0px;
+    background-color: #00abff;
+}
+.nav-bar{
+    text-align: center;
+    padding: 20px;
+     color: #fff;    
+}
+.nav-bar h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+}
+.list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.about{
+    text-transform: capitalize;
+   text-align: center;
+    color: #fff;
+    
+}
+.button a{
+    color:black;
+}
+.button{
+    text-decoration: none;
+    border-radius:33px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.button:hover{
+    background:  #008080;
+    color: #fff;
+    
+}
+/************** footer end************/
